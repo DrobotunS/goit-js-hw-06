@@ -1,5 +1,5 @@
 const categoriesUl = document.querySelector('ul#categories');
-const categoriesEl = categoriesUl.querySelectorAll('ul');
+const categoriesEl = categoriesUl.querySelectorAll('li.item');
 const categoriesH = categoriesUl.querySelectorAll('h2');
 console.log(`Number of categories: ${categoriesEl.length}`);
 const categoriesHAnimals = categoriesH[0].textContent;

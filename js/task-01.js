@@ -1,19 +1,5 @@
-const categoriesUl = document.querySelector('ul#categories');
-const categoriesEl = categoriesUl.querySelectorAll('li.item');
-const categoriesH = categoriesUl.querySelectorAll('h2');
+const listRef = document.querySelector('ul#categories');
+const categoriesEl = listRef.querySelectorAll('li.item');
 console.log(`Number of categories: ${categoriesEl.length}`);
-const categoriesHAnimals = categoriesH[0].textContent;
-console.log(`Category: ${categoriesHAnimals}`);
-const firstСategories = categoriesEl[0];
-const firstСategoriesEl = firstСategories.querySelectorAll('li');
-console.log(`Elements: ${firstСategoriesEl.length}`);
-const categoriesHProducts = categoriesH[1].textContent;
-console.log(`Category: ${categoriesHProducts}`);
-const secondСategories = categoriesEl[1];   
-const secondСategoriesEl = secondСategories.querySelectorAll('li');
-console.log(`Elements: ${secondСategoriesEl.length}`);
-const lastСategories = categoriesEl[categoriesEl.length - 1];
-const categoriesHTechnologies = categoriesH[categoriesEl.length - 1].textContent;
-console.log(`Category: ${categoriesHTechnologies}`);   
-const lastСategoriesEl = lastСategories.querySelectorAll('li');
-console.log(`Elements: ${lastСategoriesEl.length}`);
+categoriesEl.forEach(item => {console.log(`Category: ${item.firstElementChild.textContent}
+ Elements: ${item.querySelectorAll("li").length}`)})

@@ -12,15 +12,9 @@ function getRandomHexColor() {
 createDtnRef.addEventListener('click', getRandomHexColor);
 
 function createBoxes(amount) {
-  return event = amount.currentTarget.value;
-  const listItem = ingredients.map((ingredient) => {
-  const element = document.createElement("li");
-  element.textContent = 'he';
-  element.classList.add('item')
-  listEl.append(element);
-});
-  
-}
+  return 
+
+};
 inputRef.addEventListener("input", createBoxes); 
     
   
